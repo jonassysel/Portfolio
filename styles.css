@@ -1,0 +1,197 @@
+
+/* Mobile */
+@media (max-width: 650px) {
+    body {
+        color: wheat;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .title-link {
+        font-size: xx-large;
+        color: white;
+    }
+
+    img {
+        opacity: 0.6;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .bullshit {
+        opacity: 0;
+        width: 0px;
+        height: 0px;
+        object-fit: none;
+    }
+
+    nav {
+        display: flex;
+        background-color: rgb(49, 49, 49);
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 15px;
+    }
+
+    .column {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3, h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-column {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @font-face {
+        font-family: "Lexend";
+        src: url("fonts/Lexend-Regular.woff2") format("woff2"),
+             url("fonts/Lexend-Regular.woff") format("woff"),
+             url("fonts/Lexend-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .grid {
+        display: block;
+        position: relative;
+        top: 200px;
+    }
+
+    .grid a {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        border-style: solid;
+        border-radius: 40px;
+        border-width: 1px;
+        border-color: rgb(0, 0, 0);
+        width: 80%;
+        min-width: 80%;
+        text-align: center;
+        box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.434), -4px 4px 8px rgba(0, 0, 0, 0.334);
+        transition: 0.2s;
+    }
+
+    .ihateit {
+        justify-content: right;
+        display: flex;
+    }
+}
+
+
+/* Web (larger screens) */
+@media (min-width: 660px) {
+    body {
+        color: wheat;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: xx-large;
+        font-weight: bold;
+    }
+
+    .title-link {
+        font-size: xx-large;
+        color: white;
+    }
+
+    img {
+        opacity: 0.6;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    nav {
+        display: flex;
+        background-color: rgb(49, 49, 49);
+        justify-content: center;
+        padding: 15px;
+    }
+
+    nav a {
+        margin: 15px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3, h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @font-face {
+        font-family: "Lexend";
+        src: url("fonts/Lexend-Regular.woff2") format("woff2"),
+             url("fonts/Lexend-Regular.woff") format("woff"),
+             url("fonts/Lexend-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .grid a {
+        background-color: #ffffff;
+        padding: 10px 20px;
+        border-style: solid;
+        border-radius: 40px;
+        border-width: 1px;
+        border-color: rgb(0, 0, 0);
+        width: 70%;
+        min-width: 70%;
+        text-align: center;
+        box-shadow: 4px 10px 8px rgba(0, 0, 0, 0.434), -4px 4px 8px rgba(0, 0, 0, 0.334);
+        transition: 0.2s;
+    }
+
+    .grid {
+        position: relative;
+        top: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 700px;
+        place-items: center;
+    }
+
+    .ihateit {
+        justify-content: right;
+        display: flex;
+    }
+}
